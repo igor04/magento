@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ *
+ * DISCLAIMER
+ *
+ *
+ * @category    Mage
+ * @package     Mage_IsInBlock
+ * @copyright   Copyright (c) 2011
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+-->
+<config>
+    <modules>
+        <IgorS04_IsInBlock>
+            <active>true</active>
+            <codePool>local</codePool>
+        </IgorS04_IsInBlock>
+    </modules>
+</config>

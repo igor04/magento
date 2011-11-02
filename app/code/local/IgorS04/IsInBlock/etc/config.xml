@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <IgorS04_IsInBlock>
+            <version>0.2.6</version>
+        </IgorS04_IsInBlock>
+    </modules>
+    <frontend>
+       
+        <routers>
+            <isinblock>
+                <use>standard</use>
+                <args>
+                    <module>IgorS04_IsInBlock</module>
+                    <frontName>isinblock</frontName>
+                </args>
+	    </isinblock>
+        </routers>
+
+    	<layout>
+            <updates>
+                <isinblock>
+                    <file>isinblock.xml</file>
+                </isinblock>
+            </updates>
+        </layout>
+    
+    </frontend>   
+    <global>
+	<fieldsets>
+            <customer_account>
+                <isinblock>
+			<create>1</create>
+			<update>1</update>
+		</isinblock>
+            </customer_account>
+        </fieldsets>
+
+        <models>
+            <isinblock>
+                <class>IgorS04_IsInBlock_Model</class>
+            </isinblock>
+        </models>
+
+        <resources>
+ 	    <isinblock_setup>
+                <setup>
+                    <module>IgorS04_IsInBlock</module>
+		    <class>IgorS04_IsInBlock_Model_Resource_Mysql4_Setup</class>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </isinblock_setup>
+
+           <isinblock_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </isinblock_write>
+        
+            <isinblock_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </isinblock_read>
+        
+        </resources>
+        
+        <blocks>
+            <isinblock>
+                <class>IgorS04_IsInBlock_Block</class>
+            </isinblock>
+        </blocks>
+        
+        <helpers>
+            <isinblock>
+                <class>IgorS04_IsInBlock_Helper</class>
+            </isinblock>
+        </helpers>
+	
+        
+    </global>
+
+</config>

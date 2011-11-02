@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <isinblock_index_index><!--modue_controler_action-->
+        <reference name="content">
+
+	   <block type="isinblock/list" name="isinblock_edit_form" template="isinblock/list.phtml"/>
+	   
+        </reference>
+    </isinblock_index_index>
+
+</layout>
