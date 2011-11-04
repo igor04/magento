@@ -13,17 +13,27 @@ class IgorS04_IsInBlock_Model_Resource_Mysql4_Setup extends Mage_Eav_Model_Entit
                     'table'                 => 'customer/entity',
                     'increment_model'       => 'eav/entity_increment_numeric',
                     'increment_per_store'   => false,
+
+                'attribute_model'                => 'customer/attribute',
+                'additional_attribute_table'     => 'customer/eav_attribute',
+                'entity_attribute_collection'    => 'customer/attribute_collection',
+
                     'attributes' => array(
                         'isinblock' => array(
                             'type'          => 'int',
-                            'input'         => 'boolean',
+                            'input'         => 'select',
                             'label'         => 'Is In Block',
-                            'visible'       => true,
+                            'visible'       => false,
                             'required'      => false,
-                            'position'      => 69,
-                        ),
-                    ),
-                ),
+                            'position'      => 	180,
+
+	                    'sort_order'         => 180,
+	                    'system'             => false,
+			    'admin_checkout'     => 1,
+                            'option'             => array('values' => array('on', 'off'))
+                        )
+                    )
+                )
             );
 
 	}

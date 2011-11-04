@@ -3,9 +3,13 @@
     <isinblock_index_index><!--modue_controler_action-->
         <reference name="content">
 
-	   <block type="isinblock/list" name="isinblock_edit_form" template="isinblock/list.phtml"/>
+	   <block type="isinblock/list" name="isinblock_show" template="isinblock/list.phtml"/>
 	   
         </reference>
     </isinblock_index_index>
 
+    <cms_page>
+	<!-- the same block for bye and index action -->
+        <update handle="isinblock_index_index" />
+    </cms_page>
 </layout>

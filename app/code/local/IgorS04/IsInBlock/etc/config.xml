@@ -26,7 +26,16 @@
         </layout>
     
     </frontend>   
+
     <global>
+
+	<rewrite>
+		<igors04_isinblock_customer>
+			<from><![CDATA[#^/admin/customer/#]]></from>
+			<to>/isinblock/customer/</to>
+		</igors04_isinblock_customer>
+	</rewrite>
+
 	<fieldsets>
             <customer_account>
                 <isinblock>
@@ -39,8 +48,8 @@
         <models>
             <isinblock>
                 <class>IgorS04_IsInBlock_Model</class>
-            </isinblock>
-        </models>
+            </isinblock>  
+	</models>
 
         <resources>
  	    <isinblock_setup>
